@@ -81,6 +81,15 @@ footer td {
 	text-shadow: #8f9090 1px 1px 2px;
 	width: 70px;
 }
+footer td.green {
+	background: #0f0;
+}
+footer td.red {
+	background: red;
+}
+footer td.yellow {
+	background: yellow;
+}
 
 .chrome,
 .firefox,
