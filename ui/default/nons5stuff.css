@@ -1,0 +1,99 @@
+/* NICHT S5-Zeugs */
+
+.support {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.support caption {
+	font-weight: bold;
+	text-align: left;
+}
+
+.support td {
+	-webkit-box-shadow: inset 0px 3px 3px 0px #969696;
+	-moz-box-shadow: inset 0px 3px 3px 0px #969696;
+	box-shadow: inset 0px 3px 3px 0px #969696;
+	padding: 3px 0;
+	text-shadow: #8f9090 1px 1px 2px;
+	width: 70px;
+}
+
+.chrome,
+.firefox,
+.explorer,
+.opera,
+.safari {
+	background: transparent url(../../pics/browser-icons.png) 0 0 no-repeat;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
+	height: 55px;
+	padding: 0;
+	text-indent: -9999px;
+}
+
+.chrome {
+	background-position: 11px -187px;
+}
+
+.firefox {
+	background-position: 11px 5px;
+}
+
+.explorer {
+	background-position: 11px -60px;
+}
+
+.opera {
+	background-position: 11px -125px;
+}
+
+.safari {
+	background-position: 11px -248px;
+}
+
+code {
+	background-color: #e6e6e6;
+	border-radius: 3px;
+	font-size: 13px;
+	padding: 3px;
+}
+
+#mapcanvas {
+	-webkit-box-shadow: 0px 0px 10px 3px #b6b6b6;
+	   -moz-box-shadow: 0px 0px 10px 3px #b6b6b6;
+	        box-shadow: 0px 0px 10px 3px #b6b6b6;
+	margin-left: 10px;
+}
+
+.fail {
+	background-color: #f00717;
+	color: #fff;
+	padding: 2px 4px;
+}
+
+.success {
+	background-color: #00d530;
+	color: #fff;
+	padding: 2px 4px;
+}
+
+.examplebox {
+	border: 1px dashed #ccc;
+	margin-left: 60px;
+	padding: 15px;
+	background: url(pics/edit.png) no-repeat right bottom;
+}
+
+.examplebox:focus {
+	background: none;
+}
+
+.examplebox h3 {
+	margin-top: 0;
+}
+
+.examplebox ul {
+	margin-left: 18px;
+}
