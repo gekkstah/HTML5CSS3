@@ -1,1 +1,5 @@
 /* NILS' CSS */
+
+.generated-content {display: inline; margin: 1em 0; padding: 0 .4em; position: relative;}
+.generated-content:before {content: "\2660"; display: block; left: -.4em; position: absolute; top: 0;}
+.generated-content:after {content: "\2660"; display: block; right: -.4em; position: absolute; top: 0;}
