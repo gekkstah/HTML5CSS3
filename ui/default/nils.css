@@ -4,6 +4,35 @@
 .generated-content:before {content: "\2660"; display: block; left: -.4em; position: absolute; top: 0;}
 .generated-content:after {content: "\2660"; display: block; right: -.4em; position: absolute; top: 0;}
 
+/* Gradients */
+.gradientbox {
+	border: 1px solid #ccc;
+	float: left;
+	height: 6em;
+	margin: 2em .5em 0 0;
+	width: 6em;
+}
+
+.horizontal {
+	background-image: -webkit-linear-gradient(left , #1B5CAB 0%, #71C77E 100%);
+}
+
+.vertical {
+	background-image: -webkit-linear-gradient(top, #165710 0%, #D1B8CE 100%);
+}
+
+.diagonal {
+	background-image: -webkit-linear-gradient(right top, #000000 0%, #FFFFFF 80%);
+}
+
+.radial {
+	background-image: -webkit-gradient(radial, 50% 50%, 132, 50% 50%, 29,  from(#A4FC21), to(#CF0C13));
+}
+
+.shiny {
+	background-image: -webkit-linear-gradient(bottom, #4C728F 55%, #FFFFFF 65%, #89CAD0 77%);
+}
+
 /* 3D */
 #flip-container1,
 #flip-container2,
