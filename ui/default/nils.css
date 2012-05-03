@@ -3,3 +3,56 @@
 .generated-content {display: inline; margin: 1em 0; padding: 0 .4em; position: relative;}
 .generated-content:before {content: "\2660"; display: block; left: -.4em; position: absolute; top: 0;}
 .generated-content:after {content: "\2660"; display: block; right: -.4em; position: absolute; top: 0;}
+
+/* 3D */
+#flip-container1,
+#flip-container2,
+#flip-container3 {
+	float: left;
+ 	height: 400px;
+ 	margin: 1em 10px 0 0;
+    position: relative;
+    width: 270px;
+    z-index: 1;
+}
+   
+.face.front {
+	display: none;
+}
+   
+@media all and (-webkit-transform-3d) {
+	/* Use the media query to determine if 3D transforms are supported */
+	#flip-container1,
+    #flip-container2,
+    #flip-container3 {
+    	-webkit-perspective: 1000;
+    }
+    
+    #flip-card1,
+    #flip-card2,
+    #flip-card3 {
+    	width: 100%;
+       	height: 100%;
+       	-webkit-transform-style: preserve-3d;
+       	-webkit-transition: -webkit-transform 1s;
+    }
+
+    #flip-container1:hover #flip-card1,
+    #flip-container2:hover #flip-card2,
+    #flip-container3:hover #flip-card3 {
+    	-webkit-transform: rotateY(180deg);
+    }
+    
+    .face {
+    	position: absolute;
+       	width: 100%;
+       	height: 100%;
+       	-webkit-backface-visibility: hidden;
+    }
+
+    .face.front {
+    	display: block;
+       	-webkit-transform: rotateY(180deg);
+       	-webkit-box-sizing: border-box;
+    }
+}
