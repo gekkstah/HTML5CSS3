@@ -319,3 +319,47 @@ button:hover {
   text-align: center;
   text-shadow: 1px 1px 1px #333;
 }
+
+/* overflow */
+.overflow {
+  border: 1px solid #333;
+  font-size: .8em;
+  margin-top: 1em;
+  overflow: hidden;
+  padding: 10px;
+  text-overflow: ellipsis;
+  width: 400px;
+  white-space: nowrap;
+}
+
+/* text-shadows */
+.textshadow1 {
+  background-color: #b38d2b;
+  color: #fff;
+  padding: 10px;
+  text-shadow: .1em .1em 0 rgba(0,0,0,.8);
+}
+.textshadow2 {
+  color: #333;
+  padding: 10px;
+  text-shadow: .1em .1em .2em #000;
+  border: 1px solid #ccc;
+}
+.textshadow3 {
+  color: #eee;
+  background-color: #666;
+  padding: 10px;
+  text-shadow: 0 -.1em 0 rgba(0,0,0,.9);
+}
+.textshadow4 {
+  color: #111;
+  background-color: #999;
+  padding: 10px;
+  text-shadow: 0 .1em 0 rgba(255,255,255,.5);
+}
+.textshadow-header {
+  color: #333;
+  padding: 10px;
+  text-shadow: .08em .08em .17em rgba(0,0,0,.5);
+  font: 1.3em Georgia, "Times New Roman", Times, serif;
+}

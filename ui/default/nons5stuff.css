@@ -91,7 +91,7 @@ code {
 	border: 1px dashed #ccc;
 	margin-left: 60px;
 	padding: 15px;
-	background: url(pics/edit.png) no-repeat right bottom;
+	background: url(../../pics/edit.png) no-repeat right bottom;
 }
 
 .examplebox:focus {
