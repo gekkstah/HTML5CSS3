@@ -85,3 +85,149 @@
        	-webkit-box-sizing: border-box;
     }
 }
+
+/* rounded borders */
+.rounded {
+  border: 1px solid #fff;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  float: left;
+  margin-top: 1em;
+  height: 333px;
+  overflow: hidden;
+  width: 500px;
+}
+
+.pseudo-ol {
+  float: left;
+  line-height: 1.3em;
+  margin: 1em 0 0 1em;
+  width: 40%;
+}
+
+.pseudo-ol dt {
+  background: #CFDC00;
+  -webkit-border-radius: .7em;
+  border-radius: .7em;
+  color: white;
+  height: 1.3em;
+  margin-bottom: .7em;
+  text-align: center;
+  width: 1.3em;
+}
+
+.pseudo-ol dd {
+  margin: -1.9em 0 .7em 2em;
+}
+
+/* min-max-width-height */
+.min-max-height {
+  background: #a3c741 url(../../pics/minmax-ruler.gif) no-repeat;
+  border: 1px solid #ccc;
+  margin-top: 1em;
+  min-height: 200px;
+  max-height: 400px;
+  padding: 0 20px;
+  width: 450px;
+}
+
+/* animation */
+.alster {
+  background: #ccc url(../../pics/alster.jpg);
+  height: 375px;
+  margin-top: 1em;
+  overflow: hidden;
+  position: relative;
+  width: 500px;
+}
+
+.vorgrund {
+  background: url(../../pics/alster-busch.png) right bottom no-repeat;
+  height: 375px;
+  position: absolute;
+  width: 500px;
+  z-index: 100;
+}
+
+@-webkit-keyframes theboat {
+	0% {
+		 left: 700px;
+	}
+	100% {
+		 left: -200px;
+	}
+}
+
+.boot {
+  background: url(../../pics/boat.png) no-repeat;
+  height: 123px;
+  position: absolute;
+  top: 150px;
+  width: 157px;
+  z-index: 50;
+  -webkit-animation: theboat 30s infinite linear;
+}
+
+.wobble {
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-collapse: collapse;
+	font-size: .7em;
+	margin-top: 1em;
+	width: 90%;
+}
+
+.wobble td {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 10px 15px 20px;
+	vertical-align: top;
+	width: 32%;
+}
+
+.wobble td:nth-child(2n+2) {
+	background-color: #F2EDDF;
+}
+				
+button {
+	background: lime;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 1.05em;
+	padding: 5px 10px;
+}	
+			
+button:hover {
+	background: teal;
+	border-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+/* hover for wobble-table */
+.scale-item:hover {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
+	-webkit-transform: scale(1.05);
+	-webkit-transition-property: scale;
+	-webkit-transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-in-out;
+}
+
+.ani-promo {
+  background: #686868;
+  border: 3px solid #000;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 1em;
+  padding: .5em 1em;
+  -webkit-transition: all 0.7s ease-in-out;
+}
+
+.ani-promo:hover {
+  background: #333;
+  cursor: pointer;
+}
