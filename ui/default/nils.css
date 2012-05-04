@@ -231,3 +231,47 @@ button:hover {
   background: #333;
   cursor: pointer;
 }
+
+/* box-shadows */
+.box-shadow1,
+.box-shadow2,
+.box-shadow3,
+.box-shadow4,
+.box-shadow5 {
+  background: #efefef;
+  border: 1px solid #ccc;
+	-webkit-border-radius: 10px;
+	        border-radius: 10px;
+	float: left;
+  height: 5em;
+  line-height: 5em;
+  margin: 1em .5em 0 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 5em;
+}
+
+.box-shadow1 {
+  -webkit-box-shadow: 2px 2px 4px 2px #333;
+          box-shadow: 2px 2px 4px 2px #333;
+}
+
+.box-shadow2 {
+  -webkit-box-shadow: 0px 0px 10px 2px #333;
+          box-shadow: 0px 0px 10px 2px #333;
+}
+
+.box-shadow3 {
+  -webkit-box-shadow: 0px 5px 1px 0px #333;
+          box-shadow: 0px 5px 1px 0px #333;
+}
+
+.box-shadow4 {
+  -webkit-box-shadow: inset 3px 3px 5px 0px #333;
+          box-shadow: inset 3px 3px 5px 0px #333;
+}
+
+.box-shadow5 {
+  -webkit-box-shadow: 0 0 5px 2px #333, 20px -20px 10px #ccc, 30px 20px 50px #a3c741, -40px -30px 50px #3fafde;
+          box-shadow: 0 0 5px 2px #333, 20px -20px 10px #ccc, 30px 20px 50px #a3c741, -40px -30px 50px #3fafde;
+}
