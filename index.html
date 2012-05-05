@@ -564,6 +564,14 @@
 
 <div class="slide">
   <h1>Canvas</h1>
+  <ul>
+	<li>eine Art interaktive Malfläche</li>
+	<li>Graphen</li>
+	<li>ganze Spiele</li>
+	
+	Beispiel <a href="http://raphaeljs.com/pie.html" target="_blank">Statistiken</a><br>
+	Beispiel <a href="http://arandomurl.com/2010/07/25/html5-pacman.html" target="_blank">Spielchen</a>
+  </ul>
 </div>
 
 
@@ -598,7 +606,7 @@
 			<li>First item</li>
 			<li>Second item</li>
 			<li>Just edit something in this box!</li>
-			<li>Forth item</li>
+			<li>Fourth item</li>
 		</ul>
 	</div>
 	<p>Ohne große Magie, einfach pures HTML5. Die Box hat ein <code>contenteditable="true"</code>. Das ist alles.</p>
@@ -620,10 +628,10 @@
 		</tr>
 		<tr>
 			<td>&hearts;</td>
-			<td>9-10</td>
-			<td>8-9</td>
 			<td>&hearts;</td>
-			<td>5</td>
+			<td>&hearts;</td>
+			<td>&hearts;</td>
+			<td>&hearts;</td>
 		</tr>
 	</table>
 </div>
@@ -637,6 +645,9 @@
 		  Damit Ihr indess erkennt, woher dieser ganze Irrthum gekommen ist, und weshalb man die Lust anklagt und den Schmerz lobet, so will ich Euch Alles eröffnen und auseinander setzen, was jener Begründer der Wahrheit und gleichsam Baumeister des glücklichen Lebens selbst darüber gesagt hat. Niemand, sagt er, verschmähe, oder hasse, oder fliehe die Lust als solche, sondern weil grosse Schmerzen ihr folgen, wenn man nicht mit Vernunft ihr nachzugehen verstehe.
 		</div>
 	</details>
+	<p>
+		Wenig Support bisher, aber ein unglaublich effektives Features. So was vom Browser unterstützt vorliegen zu haben, spart eine Menge Code und Arbeit.
+	</p>
 </div>
 
 
@@ -664,6 +675,37 @@
 
 <div class="slide">
   <h1>HTML5 Form Features</h1>
+  <ul>
+	<li>Eines der mächtigsten und umfangreichsten Features</li>
+	<li>Teilweise schwierig zu stylen</li>
+  </ul>
+	<form action="">
+	<label>Ein Input mit Type Phone und 'required' Attribut
+		<input type="phone" required placeholder="+49 40 1234 5678">
+	</label><br>
+	<label> Slide Selector
+		<input type="range" id="rangeSlider"><span id="rangeSliderVal">00</span>
+		<script>
+			document.getElementById("rangeSlider").onchange = function() {document.getElementById("rangeSliderVal").innerHTML = this.value;}
+		</script>
+	</label><br>
+	<label> Multiple FileUpload
+		<input type="file" multiple>
+	</label><br>
+		<label> Suche
+		<input type="search" value="Handwerkers">
+	</label><br>
+	<button type="submit">Submit</button>
+	</form>
+	<form action="" onsubmit="return false;" >
+	<label>Input Type E-Mail und 'required' Attribut. Sehr spannend !
+		<input type="email" required value="max@mustermann.de">
+	</label><br>
+	<button type="submit" >Submit</button>
+	</form>
+	
+
+  
 </div>
 
 
@@ -691,6 +733,26 @@
 
 <div class="slide">
   <h1>Fortschritt anzeigen!</h1>
+
+	<p>Your score is: <meter id="meteri" min="0" max="100" value="0">2 out of 10</meter><span id="meteriSpan" style="display:none;margin-left: 10px">-done-</span></p>
+	<p>Your score is: <progress id="progressi" max="100"></progress><span id="progressiSpan" style="display:none;margin-left: 10px">-done-</span></p>
+	<button id="Bibabutton">Start Progress!</button>
+	<script>
+		document.getElementById("Bibabutton").onclick = function() { 
+			var start = 0;
+			var inter = setInterval(function(){
+				console.log(1233);
+				start = start + 10;
+				document.getElementById("meteri").value=(start%100);
+				document.getElementById("progressi").value=(start%100);
+				if(start == 100) {
+					clearInterval(inter);
+					document.getElementById("progressiSpan").style.display = "inline";
+					document.getElementById("meteriSpan").style.display = "inline";
+				}
+			},1000);
+		};
+	</script>
 </div>
 
 
