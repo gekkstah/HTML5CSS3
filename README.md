@@ -15,6 +15,8 @@ Messages für den Vortrag:
 	IE9 12,5%
 	FF 3.0+ 36%
 	Safari/Chrome 25%
+- Features, die wir hier nicht erwähnen. Entweder sind die irrelevant für diese Runde (audio, db, sessionstorage) 
+  oder aber die Unterstützung ist derart schlecht (Menus, spezielle Transitions), dass es schlichtweg keinen Sinn macht
 
 - Takewawy am Ende:
 	Auf dem neuesten Stand HTML5/CSS
