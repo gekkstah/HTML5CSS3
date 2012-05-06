@@ -40,9 +40,9 @@
 	float: left;
  	height: 400px;
  	margin: 1em 10px 0 0;
-    position: relative;
-    width: 270px;
-    z-index: 1;
+  position: relative;
+  width: 270px;
+  z-index: 1;
 }
    
 .face.front {
@@ -189,21 +189,6 @@
 	background-color: #F2EDDF;
 }
 				
-button {
-	background: lime;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	font-size: 1.05em;
-	padding: 5px 10px;
-}	
-			
-button:hover {
-	background: teal;
-	border-color: black;
-	color: white;
-	cursor: pointer;
-}
-
 /* hover for wobble-table */
 .scale-item:hover {
 	border-radius: 5px;
@@ -224,11 +209,13 @@ button:hover {
   color: #fff;
   margin-top: 1em;
   padding: .5em 1em;
-  -webkit-transition: background-color 0.7s ease-in-out;
+  -webkit-transition: background-color 0.7s ease-in-out, border-color 0.7s ease-in-out, color 0.7s ease-in-out;
 }
 
 .ani-promo:hover {
-  background-color: #333;
+  background-color: #000;
+  border-color: #4aa2df;
+  color: yellow;
   cursor: pointer;
 }
 
@@ -362,4 +349,64 @@ button:hover {
   padding: 10px;
   text-shadow: .08em .08em .17em rgba(0,0,0,.5);
   font: 1.3em Georgia, "Times New Roman", Times, serif;
+}
+
+/* transformers */
+.transformers div {
+  float: left;
+  margin: 1em .5em 0 0;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.transformers div h2 {
+  margin-bottom: .8em;
+}
+
+.t-rotate {
+  -webkit-transform: rotate(20deg);
+}
+
+.t-scale {
+  -webkit-transform: scale(.7);
+}
+
+.t-skew {
+  -webkit-transform: skew(10deg,5deg);
+}
+
+/* transitions */
+.pulse {
+  margin-top: 2em;
+  padding-top: 2em;
+  text-align: center;
+}
+
+.pulse strong {
+  background: #4fff3b;
+  border: .1em solid #111;
+  border-radius: .3em;
+  font-size: 4em;
+  padding: .3em .7em;
+  text-transform: uppercase;
+  -webkit-transition: background 2s ease-in-out 0.5s, border-color 2s ease-in-out 0.5s, color 2s ease-in-out 0.5s;
+}
+
+.pulse strong:hover {
+  background: #204b92;
+  border-color: #dfd500;
+  color: #fff;
+}
+
+/* word-wrap */
+.wordwrap {
+  background: #efefef;
+  border: 1px solid #ccc;
+  margin: .7em 0 .3em;
+  padding: 10px;
+  width: 230px;
+}
+
+.wordwrap.break{
+  word-wrap: break-word;
 }
