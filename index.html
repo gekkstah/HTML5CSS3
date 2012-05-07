@@ -51,10 +51,27 @@
   <p class="incremental">Einige der Dinge, die wir zeigen werden, sind nicht in allen Browsern lauffähig. Dennoch möchten wir euch <span>ermutigen</span> auch solche neuen Features zu benutzen.</p>
 </div>
 
+<div class="slide">
+  <h1>Halt! Browser-Statistik ...</h1>
+  <h2 class="top-margin browsers-head">Top 10 der Browser auf XING <span>(Stand: 1. Mai 2012)</span></h2>
+  <ol class="browsers">
+    <li><span>Mozilla Firefox 11.0</span> 24.3%</li>
+    <li><span>MS Internet Explorer 8</span> 15.0%</li>
+    <li><span>MS Internet Explorer 9</span> 12.5%</li>
+    <li><span>Google Chrome 18</span> 8.1%</li>
+    <li><span>No information</span> 8.0%</li>
+    <li><span>Safari 5.1.5</span> 4.7%</li>
+    <li><span>MS Internet Explorer 7</span> 4.6%</li>
+    <li><span>Mozilla Firefox 3.6</span> 2.9%</li>
+    <li><span>Mozilla Firefox 10.0</span> 2.5%</li>
+    <li><span>Mozilla Firefox 12.0</span> 1.8%</li>
+  </ol>
+</div>
+
 <!-- CSS START -->
 <div class="slide">
   <h1>Generated Content</h1>
-  <p>Mittlerweile ein Klassiker.</p>
+  <p>Mittlerweile ein Klassiker - Benutzt <em>:before</em> &amp; <em>:after</em></p>
   <p class="generated-content incremental">Absatz mit Bildchen davor &amp; danach, die gar nicht da sind.</p>
   <p class="incremental">Wir benutzen die schon recht häufig auf der Plattform:</p>
   <img src="pics/pseudos.jpg" alt="examples for generated content on XING" class="incremental">
@@ -90,6 +107,10 @@
   <div class="gradientbox diagonal"></div>
   <div class="gradientbox radial"></div>
   <div class="gradientbox shiny"></div>
+  <div class="clear"></div>
+  <p class="incremental top-margin">
+    <del>Wir können fast alles!</del> Eine ganze Menge!
+  </p>
 </div>
 
 
@@ -365,7 +386,12 @@
     <h2>Scaled</h2>
     <img src="pics/biermann.jpg" width="160" height="120" alt="biermann" class="t-scale">
   </div>
-  <div>
+  <hr>
+  <div class="no-top-margin">
+    <h2>Sönke breit</h2>
+    <img src="pics/biermann.jpg" width="160" height="120" alt="biermann" class="t-scale-w">
+  </div>
+  <div class="no-top-margin">
     <h2>Skewed</h2>
     <img src="pics/biermann.jpg" width="160" height="120" alt="biermann" class="t-skew">
   </div>
@@ -619,10 +645,9 @@
 <!-- HTML5 START -->
 <div class="slide">
   <h1>Inhalt lässt sich bearbeiten</h1>
-  <iframe src="contentedit.html" width="400" height="250" frameborder="0">
-  
+  <iframe src="contentedit.html" width="90%" height="280" frameborder="0">  
   </iframe>
-  <p>Pures HTML5 !! Die Box hat ein <code>contenteditable="true"</code>. Das ist alles.</p>
+  <p>Pures HTML5! Die Box hat ein <code>contenteditable="true"</code>. Das ist alles.</p>
   <p class="incremental">Frage: Verstehen User das? Einfach direkt eintippen wie in einem Text-Editor?</p>
   <p class="incremental">Könnte Sicherheitsrisiko beinhalten ...</p>
 </div>
@@ -687,7 +712,7 @@
 
 <div class="slide">
   <h1>Semantic Tags</h1>
-  <p>
+  <p class="top-margin">
     Neue Tags wie
       &lt;article&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, &lt;aside&gt; geben neue semantische Möglichkeiten und verbessern die Möglichkeiten des Stylings.
   </p>
@@ -724,8 +749,8 @@
   <ul class="top-margin">
     <li>Eines der mächtigsten und umfangreichsten Features</li>
     <li>Teilweise schwierig zu stylen</li>
-  </ul><br><br><br>
-  <iframe src="forms.html" frameborder="0" width="500" height="350">
+  </ul><br>
+  <iframe src="forms.html" frameborder="0" width="90%" height="350">
   </iframe>
 </div>
 

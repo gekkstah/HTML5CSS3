@@ -128,7 +128,7 @@
   min-height: 200px;
   max-height: 300px;
   padding: 0 20px;
-  width: 450px;
+  width: 250px;
 }
 
 /* animation */
@@ -354,7 +354,7 @@
 /* transformers */
 .transformers div {
   float: left;
-  margin: 1em .5em 0 0;
+  margin: .8em .5em 0 0;
   overflow: hidden;
   padding: 30px;
 }
@@ -369,6 +369,10 @@
 
 .t-scale {
   -webkit-transform: scale(.7);
+}
+
+.t-scale-w {
+  -webkit-transform: scaleX(2);
 }
 
 .t-skew {

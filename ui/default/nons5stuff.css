@@ -135,3 +135,43 @@ button:hover {
 	text-decoration: none;
 	cursor: pointer;
 }
+
+.browsers-head {
+  font-weight: bold;
+}
+
+.browsers-head span {
+  background: transparent;
+  color: #aaa;
+  font-weight: normal;
+}
+
+.browsers {
+  font-size: .9em;
+}
+
+.browsers li:nth-child(even) {
+  background-color: #cfdc00;
+}
+
+.browsers span {
+  background: transparent;
+  display: inline-block;
+  width: 60%;
+}
+
+hr {
+  background: #ccc;
+  border: 1px solid #ccc;
+  clear: both;
+  margin: 1em 0;
+}
+
+.transformers div.no-top-margin {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.clear {
+  clear: both;
+}
