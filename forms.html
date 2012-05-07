@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="ui/default/slides.css" type="text/css" media="projection" id="slideProj">
+<link rel="stylesheet" href="ui/default/nons5stuff.css" type="text/css" media="screen, projection" id="ourStyles">
+<link rel="stylesheet" href="ui/default/bjoern.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="ui/default/nils.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle">
+<link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint">
+<link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix">
+<div style="font-size:16px">
+<form action="" style="margin-top:25px">
+<label>Ein Input mit Type Phone und 'required' Attribut
+  <input type="phone" required placeholder="+49 40 1234 5678" autofocus>
+</label><br><br>
+<label> Slide Selector
+  <input type="range" id="rangeSlider"><span id="rangeSliderVal"></span>
+  <script>
+    document.getElementById("rangeSlider").onchange = function() {document.getElementById("rangeSliderVal").innerHTML = this.value;}
+  </script>
+</label><br><br>
+<label> Multiple FileUpload
+  <input type="file" multiple>
+</label><br><br>
+  <label> Suche
+  <input type="search" value="Handwerkers">
+</label><br><br>
+<button type="submit">Submit</button>
+</form>
+<form action="" onsubmit="return false;" >
+<label>Input Type E-Mail und 'required' Attribut. Sehr spannend !
+  <input type="email" required>
+</label><br><br>
+<button type="submit" >Submit</button>
+</form>
+</div>
