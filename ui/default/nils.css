@@ -126,7 +126,7 @@
   border: 1px solid #ccc;
   margin-top: 1em;
   min-height: 200px;
-  max-height: 400px;
+  max-height: 300px;
   padding: 0 20px;
   width: 450px;
 }
@@ -293,7 +293,7 @@
   border: 1px solid #fff;
   -webkit-box-shadow: 0 0 5px 0 #333;
   left: 74px;
-  opacity: 0.5;
+  opacity: 0.4;
   position: absolute;
   top: 100px;
   width: 350px;
