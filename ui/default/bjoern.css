@@ -13,3 +13,12 @@ details p {
 	height: 100%;
 	padding-left: 2em;
 }
+
+.html5-start {
+  height: 354px;
+  text-align: center;
+}
+
+.html5-start img {
+  margin: 0 10px;
+}
